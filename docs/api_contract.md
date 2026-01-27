@@ -37,13 +37,98 @@ Response Code:
 - 200 OK
 
 Example Response:
+
 ```json
 [
   {
+    "claim_id": 9001,
     "member_id": 101,
-    "first_name": "John",
-    "last_name": "Doe",
-    "status": "ACTIVE",
-    "plan_type": "STANDARD"
+    "service_date": "2025-11-02",
+    "claim_amount": 245.75,
+    "status": "APPROVED",
+    "provider_name": "City Health Clinic"
   }
 ]
+```
+
+### GET /members/{member_id}
+
+Returns details for a single member.
+
+Path Parameters:
+- member_id (integer)
+
+Response Codes:
+- 200 OK
+- 404 Not Found
+
+Business Rules:
+- member_id must be numeric
+- returned member_id must be an integer type
+
+Example Response:
+```json
+{
+  "member_id": 101,
+  "first_name": "John",
+  "last_name": "Doe",
+  "date_of_birth": "1985-04-12",
+  "status": "ACTIVE",
+  "plan_type": "STANDARD"
+}
+```
+### GET /claims
+
+Returns a list of claims.
+
+Optional Query Parameters:
+- member_id (integer)
+- status (SUBMITTED, APPROVED, DENIED)
+
+Response Codes:
+- 200 OK
+
+Business Rules:
+- if status is provided, only claims matching that status should be returned
+- if member_id is provided, only claims for that member should be returned
+
+Example Response:
+```json
+[
+  {
+    "claim_id": 9001,
+    "member_id": 101,
+    "service_date": "2025-11-02",
+    "claim_amount": 245.75,
+    "status": "APPROVED",
+    "provider_name": "City Health Clinic"
+  }
+]
+```
+### GET /claims/{claim_id}
+
+Returns details for a single claim.
+
+Path Parameters:
+- claim_id (integer)
+
+Response Codes:
+- 200 OK
+- 404 Not Found
+
+Business Rules:
+- claim_amount must be greater than 0
+- claim_id must be numeric
+
+## General Error Handling
+
+| Scenario | Expected Code |
+|--------|----------------|
+| Invalid ID format | 400 Bad Request |
+| Resource not found | 404 Not Found |
+| Invalid query parameter | 400 Bad Request |
+
+## Known Limitations
+
+- This API uses mock data.
+- Pagination and authentication are out of scope.
