@@ -2,25 +2,22 @@
 
 ## Overview
 
-Manual API testing was performed for the Member Claims API based on the documented API contract and test plan. Testing focused on validating core member and claim retrieval functionality, response structure, filtering logic, and basic error handling.
+Manual API testing was conducted for the Member Claims API based on the defined API contract and test cases. The focus of testing was to verify core member and claim retrieval functionality, filtering behavior, and basic error handling.
 
-All testing was executed using Postman, with limited SQL validation used to confirm sample data consistency.
+Testing was performed using Postman with mock API responses.
 
 ---
 
 ## Testing Scope
 
-The following areas were covered:
-
-- Member retrieval endpoints
+Areas covered:
+- Member lookup endpoints
 - Claim retrieval endpoints
 - Query parameter filtering
-- Response field validation
-- Data type validation
+- Response field and data type validation
 - Basic negative testing
 
-The following areas were not tested:
-
+Out of scope:
 - Authentication and authorization
 - Create, update, or delete operations
 - Performance or load testing
@@ -34,8 +31,8 @@ The following areas were not tested:
 | Category | Count |
 |-------|------|
 | Test scenarios | 10 |
-| Test cases executed | 9 |
-| Passed | 7 |
+| Test cases executed | 10 |
+| Passed | 8 |
 | Failed | 2 |
 | Blocked | 0 |
 
@@ -52,7 +49,4 @@ The following areas were not tested:
 
 ## Overall Assessment
 
-Core API functionality behaves as expected for basic retrieval operations. However, issues were identified with data type consistency and filtering logic that should be resolved before release.
-
-Once the logged defects are fixed, re-testing of affected endpoints is recommended.
-
+Most endpoints behaved as expected during testing. Two defects were identified related to data type consistency and filtering logic. These issues should be addressed before release, followed by re-testing of the affected endpoints.
