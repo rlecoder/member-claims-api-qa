@@ -1,0 +1,8 @@
+{
+    "member_id": "101",
+    "first_name": "John",
+    "last_name": "Doe",
+    "date_of_birth": "1985-04-12",
+    "status": "ACTIVE",
+    "plan_type": "STANDARD"
+}

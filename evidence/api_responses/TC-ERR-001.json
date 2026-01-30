@@ -1,0 +1,3 @@
+{
+    "error": "Invalid status value. Allowed values are SUBMITTED, APPROVED, DENIED."
+}

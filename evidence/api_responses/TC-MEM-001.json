@@ -1,0 +1,23 @@
+[
+    {
+        "member_id": 101,
+        "first_name": "John",
+        "last_name": "Doe",
+        "status": "ACTIVE",
+        "plan_type": "STANDARD"
+    },
+    {
+        "member_id": 102,
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "status": "ACTIVE",
+        "plan_type": "PREMIUM"
+    },
+    {
+        "member_id": 103,
+        "first_name": "Mark",
+        "last_name": "Taylor",
+        "status": "INACTIVE",
+        "plan_type": "BASIC"
+    }
+]

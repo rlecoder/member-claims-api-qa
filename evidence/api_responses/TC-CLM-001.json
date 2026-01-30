@@ -1,0 +1,50 @@
+[
+    {
+        "claim_id": 9001,
+        "member_id": 101,
+        "service_date": "2025-11-02",
+        "claim_amount": 245.75,
+        "status": "APPROVED",
+        "provider_name": "City Health Clinic"
+    },
+    {
+        "claim_id": 9002,
+        "member_id": 101,
+        "service_date": "2025-11-15",
+        "claim_amount": 120,
+        "status": "DENIED",
+        "provider_name": "Downtown Imaging Center"
+    },
+    {
+        "claim_id": 9003,
+        "member_id": 101,
+        "service_date": "2025-12-01",
+        "claim_amount": 89.5,
+        "status": "SUBMITTED",
+        "provider_name": "Family Practice Group"
+    },
+    {
+        "claim_id": 9004,
+        "member_id": 102,
+        "service_date": "2025-10-20",
+        "claim_amount": 560,
+        "status": "DENIED",
+        "provider_name": "Metro Hospital"
+    },
+    {
+        "claim_id": 9005,
+        "member_id": 102,
+        "service_date": "2025-11-05",
+        "claim_amount": 310.25,
+        "status": "APPROVED",
+        "provider_name": "Urgent Care Plus"
+    },
+    {
+        "claim_id": 9006,
+        "member_id": 103,
+        "service_date": "2025-09-12",
+        "claim_amount": 75,
+        "status": "DENIED",
+        "provider_name": "Community Health Lab"
+    }
+]

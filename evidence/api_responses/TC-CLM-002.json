@@ -1,0 +1,8 @@
+{
+    "claim_id": 9001,
+    "member_id": 101,
+    "service_date": "2025-11-02",
+    "claim_amount": 245.75,
+    "status": "APPROVED",
+    "provider_name": "City Health Clinic"
+}
