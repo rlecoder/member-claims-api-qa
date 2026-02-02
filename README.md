@@ -1,16 +1,16 @@
-# Member Claims API — Manual QA Practice Project
+# Member Claims API — Manual QA Project
 
-This project is a manual QA practice repository based on a simplified health insurance claims system. The API supports member lookup and claim tracking functionality.
+This repository contains manual QA testing work for a simplified health insurance claims API. The API supports basic member lookup and claim retrieval functionality.
 
-Testing focuses on validating API behavior against documented business rules and verifying sample data using SQL queries.
+Testing focuses on validating API behavior against documented business rules and verifying sample data through SQL-based checks. Mock responses are used to simulate backend behavior.
 
-This project is intended to demonstrate entry-level QA skills rather than represent a production system.
+This project is intended to demonstrate entry-level QA testing skills.
 
 ---
 
 ## Project Scope
 
-The following areas were tested:
+Testing covered the following areas:
 
 - Member lookup by ID
 - Claim retrieval and filtering
@@ -21,15 +21,15 @@ The following areas were tested:
 
 ---
 
-## Tools Used
+## Defects
 
-- Postman — manual API testing  
-- VS Code — SQL validation queries  
+Intentional defects were introduced in mock API responses to demonstrate defect identification and documentation. These defects are based on API behavior rather than backend failures.
+
+Details can be found in `docs/defect_log.md`.
 
 ---
 
-## Project Structure
-
+## Repository Structure
 
 ```
 member-claims-api-qa/
@@ -52,15 +52,3 @@ member-claims-api-qa/
    ├── api_responses/
    └── screenshots/
 ```
-
----
-
-## Quick Start (Postman)
-
-- This project uses mock API data and none of the other data is based on real data
-- Defects are created based on mock responses not backend failures
-
----
-
-## Project Structure
-
